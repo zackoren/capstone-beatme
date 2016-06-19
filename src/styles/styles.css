@@ -5,3 +5,11 @@
 .inverted.segment{
     border-radius: 0;
 }
+
+.brand.item {
+    font-size: 1.1em;
+}
+
+.column.login {
+    max-width: 500px;
+}

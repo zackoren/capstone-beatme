@@ -8,8 +8,8 @@ export default (props) => {
         <a className="brand item" href="#"><i className="map icon"></i>Beat Me!</a>
         <Link className="active item" to="/">Home</Link>
         <div className="right menu">
-          <a className="item" href="#">Login</a>
-          <a className="item" href="#">Sign Up</a>
+          <Link className="item" to="login">Login</Link>
+          <Link className="item" to="register">Sign Up</Link>
           <a className="item" href="#">Help</a>
         </div>
       </div>
