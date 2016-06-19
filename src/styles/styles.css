@@ -1,0 +1,7 @@
+.padding-reset {
+    padding: 0px !important;
+}
+
+.inverted.segment{
+    border-radius: 0;
+}
