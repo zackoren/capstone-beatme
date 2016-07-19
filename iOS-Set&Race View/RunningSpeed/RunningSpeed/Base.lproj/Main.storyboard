@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Set Race View Controller-->
+        <scene sceneID="9N2-eA-fyh">
+            <objects>
+                <viewController id="f6R-ZT-mcC" customClass="SetRaceViewController" customModule="RunningSpeed" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nxi-M2-y3A"/>
+                        <viewControllerLayoutGuide type="bottom" id="xYy-s1-WAu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="weU-Uo-Iq2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mof-0e-ieH">
+                                <rect key="frame" x="88" y="70" width="424" height="366"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ecq-bz-Puo">
+                                        <rect key="frame" x="0.0" y="0.0" width="424" height="260"/>
+                                    </mapView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RYf-cp-cTW">
+                                        <rect key="frame" x="49" y="280" width="326" height="86"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CZy-iS-L7w">
+                                                <rect key="frame" x="0.0" y="0.0" width="326" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAT-4Z-zDK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="108" height="30"/>
+                                                        <state key="normal" title="Generate Route"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsg-Hy-5Qb">
+                                                        <rect key="frame" x="128" y="0.0" width="136" height="30"/>
+                                                        <state key="normal" title="Generate Opponent"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAf-Ln-doY">
+                                                        <rect key="frame" x="284" y="0.0" width="42" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyf-tE-ppS">
+                                                <rect key="frame" x="117" y="50" width="93" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Start Race"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="mof-0e-ieH" secondAttribute="trailing" constant="68" id="7Uo-Kh-xYB"/>
+                            <constraint firstItem="xYy-s1-WAu" firstAttribute="top" secondItem="mof-0e-ieH" secondAttribute="bottom" constant="164" id="Xnw-vN-jCe"/>
+                            <constraint firstItem="mof-0e-ieH" firstAttribute="leading" secondItem="weU-Uo-Iq2" secondAttribute="leadingMargin" constant="68" id="n3O-yc-GYX"/>
+                            <constraint firstItem="mof-0e-ieH" firstAttribute="top" secondItem="Nxi-M2-y3A" secondAttribute="bottom" constant="50" id="tiz-Lp-52M"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p9Y-9A-8DY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568" y="755"/>
+        </scene>
+        <!--User Run View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="UserRunViewController" customModule="RunningSpeed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" tag="1" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWd-mg-0L1">
+                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jwl-48-Km3">
+                                <rect key="frame" x="145" y="47" width="311" height="506"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Speed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcz-uA-ong">
+                                        <rect key="frame" x="20" y="7" width="85" height="18"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ri5-pf-y0F">
+                                        <rect key="frame" x="113" y="7" width="85" height="18"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxJ-n4-IEF">
+                                        <rect key="frame" x="206" y="7" width="85" height="18"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Riv-aj-cZN">
+                                        <rect key="frame" x="228" y="476" width="63" height="30"/>
+                                        <state key="normal" title="Stop Run">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="StopRunTime" destination="BYZ-38-t0r" eventType="touchUpInside" id="K7w-Bf-UUB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39U-qp-PQJ">
+                                        <rect key="frame" x="20" y="476" width="65" height="30"/>
+                                        <state key="normal" title="Start Run">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="StartRunTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbJ-Eq-CHN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fWd-mg-0L1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2rO-VI-9dI"/>
+                            <constraint firstItem="Jwl-48-Km3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9ev-On-3kx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jwl-48-Km3" secondAttribute="trailing" id="9td-XV-NJW"/>
+                            <constraint firstItem="Jwl-48-Km3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GYQ-M6-M57"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jwl-48-Km3" secondAttribute="bottom" id="Obj-ov-yl4"/>
+                            <constraint firstItem="fWd-mg-0L1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="P3K-Tw-g2E"/>
+                            <constraint firstItem="fWd-mg-0L1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="frg-N6-3IO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fWd-mg-0L1" secondAttribute="bottom" id="mlp-vt-rBf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="RunButton" destination="39U-qp-PQJ" id="jvM-AT-mPF"/>
+                        <outlet property="RunnderDistance" destination="GxJ-n4-IEF" id="ypc-q1-9c9"/>
+                        <outlet property="RunnderSpeed" destination="Dcz-uA-ong" id="7hN-qC-aIz"/>
+                        <outlet property="RunnderTime" destination="Ri5-pf-y0F" id="Udj-OV-1Ab"/>
+                        <outlet property="RunnerMap" destination="fWd-mg-0L1" id="S8i-XN-IKC"/>
+                        <outlet property="StopButton" destination="Riv-aj-cZN" id="ahi-2R-JVl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="755"/>
+        </scene>
+    </scenes>
+</document>
